@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="icon" href="https://img.icons8.com/external-dreamstale-lineal-dreamstale/32/000000/external-light-bulb-ecology-dreamstale-lineal-dreamstale.png">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+	<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<title>Projects • Melissa Wu</title>
+
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+	<script>
+        $(function () {
+          var includes = $('[data-include]')
+          $.each(includes, function () {
+            var file = 'views/' + $(this).data('include') + '.hbs'
+            $(this).load(file)
+          })
+        })
+    </script>
+
+    <div data-include="header"></div>
+
+    <div class="row container">
+        <div class="col s6">
+            <div class="card grey lighten-5">
+                <div class="card-content black-text">
+                    <span class="card-title header">BranchOut! Social Research</span>
+                    <p>Student-led social research paper that studies the relation between the economic effects of the
+                    COVID-19 pandemic and symptoms of anxiety and depression among U.S. adults. Peer-reviewed and
+                    published in the Journal of Student Research.</p>
+                </div>
+                <div class="card-action">
+                    <a href="https://doi.org/10.47611/jsrhs.v10i3.1554" target="_blank">View Paper</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s6">
+            <div class="card grey lighten-5">
+                <div class="card-content black-text">
+                    <span class="card-title header">econScope</span>
+                    <p>Inspired by the economic effects of the COVID-19 pandemic, econScope analyzes
+                    changes in the national and global economy. Features include weekly economic updates, a live
+                    COVID-19 case tracker, and thematic economic analyses.</p>
+                </div>
+                <div class="card-action">
+                    <a href="http://econscope.org/" target="_blank">View Site</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s6">
+            <div class="card grey lighten-5">
+                <div class="card-content black-text">
+                    <span class="card-title header">Data Science Project</span>
+                    <p>Researches the relationship between the health of the information technology
+                    sector and various indicators of economic growth in the US. Data visualizations include trends over
+                    time, linear regressions, and other summary statistics.</p>
+                </div>
+                <div class="card-action">
+                    <a href="https://melissa-wu.shinyapps.io/datascience" target="_blank">View App</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

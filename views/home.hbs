@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link rel="icon" href="https://img.icons8.com/ios/50/000000/thinking-bubble.png">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+	<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<title>Melissa Wu</title>
+
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+	<script>
+        $(function () {
+          var includes = $('[data-include]')
+          $.each(includes, function () {
+            var file = 'views/' + $(this).data('include') + '.hbs'
+            $(this).load(file)
+          })
+        })
+    </script>
+
+    <div data-include="header"></div>
+
+    <div class="row container">
+        <div class="col s6">
+            <img src="img/headshot.JPG" width="330"/>
+            <p>Email: melizwu@gmail.com</p>
+            <p>Phone: (703) 877-9338</p>
+            <a href="https://www.linkedin.com/in/melissazwu/"><img src="https://img.icons8.com/ios/50/000000/linkedin.png"/></a>
+            <a href="https://github.com/mzwu"><img src="https://img.icons8.com/ios/50/000000/github--v1.png"/></a>
+        </div>
+        <div class="col s6 pull-s1">
+            <p>Hi! My name is Melissa, and I'm a senior at Thomas Jefferson High School for Science and Technology.
+            My academic interests include the interdisciplinary intersection of computer science, economics, and data
+            science. I am passionate about using computational methods to develop data-driven solutions for social good.</p>
+        </div>
+    </div>
+
+</body>
+</html>
