@@ -16,7 +16,7 @@
         $(function () {
           var includes = $('[data-include]')
           $.each(includes, function () {
-            var file = 'views/' + $(this).data('include') + '.hbs'
+            var file = $(this).data('include') + '.html'
             $(this).load(file)
           })
         })
@@ -26,7 +26,7 @@
 
     <div class="row container">
         <div class="col s6">
-            <img src="img/headshot.JPG" width="330"/>
+            <img src="../img/headshot.JPG" width="330"/>
             <p>Email: melizwu@gmail.com</p>
             <p>Phone: (703) 877-9338</p>
             <a href="https://www.linkedin.com/in/melissazwu/"><img src="https://img.icons8.com/ios/50/000000/linkedin.png"/></a>
